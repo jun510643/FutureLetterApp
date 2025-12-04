@@ -1,0 +1,6 @@
+{
+  "theme": "light",
+  "sortOrder": "asc",
+  "pin": "",
+  "defaultCategories": ["general","goals","school","personal"]
+}
