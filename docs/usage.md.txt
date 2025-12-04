@@ -1,0 +1,19 @@
+# FutureLetterWeb — Usage Guide (v1.1.0.0)
+
+## Features
+- Save letters with a chosen date
+- Categories: General, Goals, School, Personal
+- Edit, Delete, Sort, Search
+- Export and Import JSON backups
+- Theme toggle (Light / Dark)
+- Simple PIN lock via config file (optional)
+
+## Quick Start
+1. Open index.html or visit the GitHub Pages URL.
+2. Write your letter, pick a date and category, then click Save.
+3. Use Search and Filter to find letters.
+4. Use Export to download a backup; use Import to restore.
+
+## Notes
+- Data is stored in browser localStorage.
+- For PIN protection, set `pin` in `config/settings.json`.
