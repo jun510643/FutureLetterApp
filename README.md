@@ -8,7 +8,7 @@ Write letters for the future and read them on a chosen date.
 
 
 
-\## Features (v1.0.0.0)
+\## Features (v1.0.0.1) Bug fixed
 
 \- Write a letter
 
