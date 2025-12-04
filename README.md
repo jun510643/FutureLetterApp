@@ -43,8 +43,6 @@ Thank you for using FutureLetterWeb!
 
 \## Future Versions
 
-\- v1.1.0.0: Delete letters
-
 \- v1.2.0.0: Edit letters
 
 \- v1.3.0.0: Themes and dark mode
