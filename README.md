@@ -11,7 +11,7 @@ Write letters for the future and read them on a chosen date.
 <<<<<<< HEAD
 \## How to use
 =======
-\## Features (v1.0.0.1) Bug fixed
+\## Features (v1.1.0.0) Bug fixed
 >>>>>>> origin/main
 
 Write letters for your future self. Save, edit, delete, sort, search, export and import your letters.
