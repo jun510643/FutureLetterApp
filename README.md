@@ -37,9 +37,9 @@ Thank you for using FutureLetterWeb!
 
 \- v1.1.0.0: Delete letters
 
-\- v2.0.0.0: Edit letters
+\- v1.2.0.0: Edit letters
 
-\- v3.0.0.0: Themes and dark mode
+\- v1.3.0.0: Themes and dark mode
 
 
 
