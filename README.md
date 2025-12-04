@@ -19,8 +19,13 @@ Write letters for the future and read them on a chosen date.
 
 
 \## How to Use
+Click the link below and start writing your letters for the future.  
 
-1\. Just copy and paste this link: "https://jun510643.github.io/FutureLetterApp/" (Please bookmark FutureLetterWeb. click the star icon or press Ctrl+D)
+💡 Pro tip: Add this page to your browser's Bookmarks Bar or Other Bookmarks for quick access.  
+
+https://jun510643.github.io/FutureLetterApp/
+
+Thank you for using FutureLetterApp
 
 
 \## Future Versions
