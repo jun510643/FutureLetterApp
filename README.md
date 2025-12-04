@@ -20,7 +20,7 @@ Write letters for the future and read them on a chosen date.
 
 \## How to Use
 
-1\. Just copy and paste this link: "https://jun510643.github.io/FutureLetterApp/"
+1\. Just copy and paste this link: "https://jun510643.github.io/FutureLetterApp/" (Please bookmark FutureLetterWeb. click the star icon or press Ctrl+D)
 
 
 \## Future Versions
