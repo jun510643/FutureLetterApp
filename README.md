@@ -8,25 +8,13 @@ Write letters for the future and read them on a chosen date.
 
 
 
-\## Features (v1.0.0)
+\## How to use
 
-\- Write a letter
+Write letters for your future self. Save, edit, delete, sort, search, export and import your letters.
 
-\- Choose a future date
+Access instantly: https://jun510643.github.io/FutureLetterApp/
 
-\- Save and display letters when the date arrives
-
-
-
-\## How to Use
-
-1\. Open `index.html` in a browser
-
-2\. Write your letter and select a date
-
-3\. Click "Save Letter"
-
-4\. Letters will appear when the date arrives
+Pro tip: Add this page to your browser's Bookmarks Bar or Other Bookmarks for quick access.
 
 
 
