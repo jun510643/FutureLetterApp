@@ -1,51 +1,10 @@
-# Future-Letter-Web
+# FutureLetterWeb
 
-\# Future Letter Web App
+## How to use
+1. Open index.html or visit https://jun510643.github.io/FutureLetterApp/
+2. Write a letter, select date & category, click Save
+3. Search, sort, edit, delete letters as needed
+4. Export/Import for backups
+5. Toggle Light/Dark theme from header
 
-
-
-Write letters for the future and read them on a chosen date.
-
-
-
-<<<<<<< HEAD
-\## How to use
-=======
-\## Features (v1.1.0.0) Bug fixed
->>>>>>> origin/main
-
-Write letters for your future self. Save, edit, delete, sort, search, export and import your letters.
-
-Access instantly: https://jun510643.github.io/FutureLetterApp/
-
-<<<<<<< HEAD
-Pro tip: Add this page to your browser's Bookmarks Bar or Other Bookmarks for quick access.
-=======
-\- Save and display letters when the date arrives
-
-
-
-\## How to Use
-Welcome to the first release of FutureLetterWeb! 🎉
-
-Try the app instantly by clicking the link below and start writing your letters for the future.
-
-💡 Pro tip: Add this page to your browser's Bookmarks Bar or Other Bookmarks for quick access.
-
-https://jun510643.github.io/FutureLetterApp/
-
-⚡ Note: Minor updates and bug fixes will be released as patch versions (e.g., v1.0.0.1, v1.0.0.2, etc.)
-
-Thank you for using FutureLetterWeb!
->>>>>>> origin/main
-
-
-
-\## Future Versions
-
-\- v1.2.0.0: Edit letters
-
-\- v1.3.0.0: Themes and dark mode
-
-
-
+Thank you for using FutureLetterWeb!!!
