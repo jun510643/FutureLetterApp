@@ -10,3 +10,5 @@
 Thank you for using FutureLetterWeb!!!
 
 If you find any problems or bugs, please let me know.
+
+The next version of FutureLetterWeb will likely be 1.1.1.0, which will include improvements to dark and light modes and a new logo.
