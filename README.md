@@ -1,4 +1,4 @@
-🚀 FutureLetterWeb v1.1.2.0 — Update Release
+🚀 FutureLetterWeb v1.1.3.0 — Update Release
 ✨ What's New
 
 Added full Light/Dark Mode support
