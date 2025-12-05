@@ -8,3 +8,5 @@
 5. Toggle Light/Dark theme from header
 
 Thank you for using FutureLetterWeb!!!
+
+If you find any problems or bugs, please let me know.
