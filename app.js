@@ -1,35 +1,67 @@
-// Theme Toggle
-document.getElementById("themeToggle").addEventListener("click", () => {
-    document.body.classList.toggle("dark-mode");
-});
-
-// Save Letters
+<script>
+const dateInput = document.getElementById("dateInput");
+const textInput = document.getElementById("textInput");
 const saveBtn = document.getElementById("saveBtn");
-const letterInput = document.getElementById("letterInput");
-const savedList = document.getElementById("savedList");
+const lettersList = document.getElementById("lettersList");
 
-// Load saved letters on page load
-window.addEventListener("load", () => {
-    const saved = JSON.parse(localStorage.getItem("letters")) || [];
-    saved.forEach(text => addLetter(text));
+
+function loadLetters() {
+const letters = JSON.parse(localStorage.getItem("letters") || "[]");
+lettersList.innerHTML = "";
+
+
+letters.forEach((letter, index) => {
+const div = document.createElement("div");
+div.className = "letter";
+
+
+div.innerHTML = `
+<div class="meta">📅 ${letter.date}</div>
+<div class="content">${letter.text}</div>
+<button class="deleteBtn" data-index="${index}">Delete</button>
+`;
+
+
+lettersList.appendChild(div);
 });
+}
+
 
 saveBtn.addEventListener("click", () => {
-    const text = letterInput.value.trim();
-    if (text === "") return;
+const date = dateInput.value;
+const text = textInput.value.trim();
 
-    addLetter(text);
 
-    const saved = JSON.parse(localStorage.getItem("letters")) || [];
-    saved.push(text);
-    localStorage.setItem("letters", JSON.stringify(saved));
+if (!date || !text) return alert("Please fill everything!");
 
-    letterInput.value = "";
+
+const letters = JSON.parse(localStorage.getItem("letters") || "[]");
+letters.push({ date, text });
+localStorage.setItem("letters", JSON.stringify(letters));
+
+
+textInput.value = "";
+dateInput.value = "";
+
+
+loadLetters();
 });
 
-// Add letter to UI
-function addLetter(text) {
-    const li = document.createElement("li");
-    li.textContent = text;
-    savedList.appendChild(li);
+
+lettersList.addEventListener("click", (e) => {
+if (e.target.classList.contains("deleteBtn")) {
+const index = e.target.dataset.index;
+
+
+const letters = JSON.parse(localStorage.getItem("letters") || "[]");
+letters.splice(index, 1);
+localStorage.setItem("letters", JSON.stringify(letters));
+
+
+loadLetters();
 }
+});
+
+
+loadLetters();
+</script>
