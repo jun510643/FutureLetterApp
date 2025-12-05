@@ -1,12 +1,34 @@
-# FutureLetterWeb
+🚀 FutureLetterWeb v1.1.2.0 — Update Release
+✨ What's New
 
-## How to use
-1. Open index.html or visit https://jun510643.github.io/FutureLetterApp/
-2. Write a letter, select date & category, click Save
-3. Search, sort, edit, delete letters as needed
-4. Export/Import for backups
-5. Toggle Light/Dark theme from header
+Added full Light/Dark Mode support
 
-Thank you for using FutureLetterWeb!!!
+Improved UI colors using CSS variables
 
-If you find any problems or bugs, please let me know.
+Updated layout for cleaner and more modern look
+
+Enhanced letter saving system for better stability
+
+Code structure cleaned and optimized across HTML/CSS/JS
+
+🐞 Fixes
+
+Fixed inconsistent theme behavior in certain browsers
+
+Improved localStorage loading reliability
+
+Text visibility issues in Light Mode resolved
+
+⚙️ Notes
+
+This is a feature-level improvement update.
+
+No breaking changes were introduced.
+
+More UI upgrades and new features coming soon!
+
+🔗 Try it Now
+
+https://jun510643.github.io/FutureLetterApp/
+
+Don't forget to bookmark it on your Bookmarks Bar for quick access! 🔖✨
