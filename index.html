@@ -10,11 +10,14 @@
   <header class="header">
     <div class="brand">
       <img src="assets/images/logo.png" alt="logo" class="logo" />
-      <h1>FutureLetterWeb</h1>
+      <div class="brand-text">
+        <h1 class="app-title">FutureLetterWeb</h1>
+        <div class="version">M. v1.2.0 - Alpha</div>
+      </div>
     </div>
 
     <div class="header-controls">
-      <button id="themeToggle" class="icon-btn" title="Toggle theme">🌙</button>
+      <button id="themeToggle" class="icon-btn" title="Toggle theme">🌓</button>
       <button id="openSettings" class="icon-btn" title="Settings">⚙️</button>
       <button id="exportBtn" class="icon-btn" title="Export backup">⬇️</button>
       <button id="importBtn" class="icon-btn" title="Import backup">⬆️</button>
@@ -23,11 +26,11 @@
   </header>
 
   <main class="main">
-    <section class="editor card">
+    <section class="editor card" aria-label="Editor">
       <label for="letterInput" class="label">Write your letter</label>
       <textarea id="letterInput" placeholder="Write your letter..." rows="6" wrap="soft"></textarea>
 
-      <div class="row">
+      <div class="row controls-row">
         <input id="deliveryDate" type="date" />
         <select id="categorySelect">
           <option value="general">General</option>
@@ -40,16 +43,16 @@
 
       <div class="meta">
         <span id="charCount">0 chars</span>
-        <span id="statusMsg" class="status"></span>
+        <span id="statusMsg" class="status" aria-live="polite"></span>
       </div>
     </section>
 
-    <section class="list card">
+    <section class="list card" aria-label="Saved letters">
       <div class="list-header">
         <h2>Saved Letters</h2>
 
         <div class="list-controls">
-          <select id="filterCategory">
+          <select id="filterCategory" class="small-select">
             <option value="all">All categories</option>
             <option value="general">General</option>
             <option value="goals">Goals</option>
@@ -58,40 +61,68 @@
           </select>
 
           <input id="searchInput" type="search" placeholder="Search letters..." />
-          <button id="sortBtn" class="icon-btn" title="Sort by date">⇅</button>
+          <select id="sortSelect" class="small-select">
+            <option value="date_asc">Date ↑</option>
+            <option value="date_desc">Date ↓</option>
+            <option value="created_desc">Newest saved</option>
+          </select>
+
+          <button id="clearAllBtn" class="icon-btn" title="Clear all">🗑️</button>
         </div>
       </div>
 
-      <ul id="letterList" class="letter-list"></ul>
+      <ul id="letterList" class="letter-list" aria-live="polite"></ul>
     </section>
   </main>
 
   <footer class="footer">
-    <small> 1.2.0 - Alpha • Add to Bookmarks Bar or Other Bookmarks</small>
+    <small>M. v1.2.0 - Alpha • Add to Bookmarks Bar or Other Bookmarks</small>
   </footer>
 
   <!-- Settings Modal -->
   <div id="settingsModal" class="modal" aria-hidden="true">
     <div class="modal-content card">
       <h3>Settings</h3>
-      <label>
-        <input id="autoBackupToggle" type="checkbox" />
-        Enable automatic backup (save copies to localStorage)
+
+      <label class="setting-row">
+        <span>Theme</span>
+        <select id="themeSelect">
+          <option value="light">Light</option>
+          <option value="dark">Dark</option>
+          <option value="auto">Auto (system)</option>
+        </select>
       </label>
 
-      <label>
-        Backup interval (minutes):
+      <label class="setting-row">
+        <span>Auto backup</span>
+        <input id="autoBackupToggle" type="checkbox" />
+      </label>
+
+      <label class="setting-row">
+        <span>Backup interval (minutes)</span>
         <input id="backupInterval" type="number" min="1" max="1440" value="15" />
       </label>
 
-      <label>
-        Auto-download backup on every backup:
+      <label class="setting-row">
+        <span>Auto-download backups</span>
         <input id="autoDownloadToggle" type="checkbox" />
       </label>
 
+      <label class="setting-row">
+        <span>Font size</span>
+        <select id="fontSizeSelect">
+          <option value="14">Small</option>
+          <option value="16" selected>Medium</option>
+          <option value="18">Large</option>
+          <option value="20">XL</option>
+        </select>
+      </label>
+
       <div class="modal-actions">
+        <button id="resetSettingsBtn" class="secondary-btn">Reset Defaults</button>
+        <div style="flex:1"></div>
+        <button id="saveSettings" class="primary-btn">Save</button>
         <button id="closeSettings" class="secondary-btn">Close</button>
-        <button id="saveSettings" class="primary-btn">Save Settings</button>
       </div>
     </div>
   </div>
